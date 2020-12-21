@@ -1,0 +1,25 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname=helvetica] ;
+edge [fontname=helvetica] ;
+0 [label="speed <= 41.5\ngini = 0.749\nsamples = 6259\nvalue = [566, 2033, 994, 2028, 122, 516]\nclass = 2", fillcolor="#ffffff"] ;
+1 [label="speed <= 29.0\ngini = 0.341\nsamples = 2599\nvalue = [566, 2033, 0, 0, 0, 0]\nclass = 2", fillcolor="#b8ec70"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="gini = 0.0\nsamples = 566\nvalue = [566, 0, 0, 0, 0, 0]\nclass = [", fillcolor="#e58139"] ;
+1 -> 2 ;
+3 [label="gini = 0.0\nsamples = 2033\nvalue = [0, 2033, 0, 0, 0, 0]\nclass = 2", fillcolor="#9de539"] ;
+1 -> 3 ;
+4 [label="speed <= 58.0\ngini = 0.598\nsamples = 3660\nvalue = [0, 0, 994, 2028, 122, 516]\nclass = ,", fillcolor="#b2d9f5"] ;
+0 -> 4 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+5 [label="gini = 0.0\nsamples = 994\nvalue = [0, 0, 994, 0, 0, 0]\nclass = 5", fillcolor="#39e581"] ;
+4 -> 5 ;
+6 [label="speed <= 70.5\ngini = 0.382\nsamples = 2666\nvalue = [0, 0, 0, 2028, 122, 516]\nclass = ,", fillcolor="#74baed"] ;
+4 -> 6 ;
+7 [label="gini = 0.0\nsamples = 2028\nvalue = [0, 0, 0, 2028, 0, 0]\nclass = ,", fillcolor="#399de5"] ;
+6 -> 7 ;
+8 [label="speed <= 87.5\ngini = 0.309\nsamples = 638\nvalue = [0, 0, 0, 0, 122, 516]\nclass = 3", fillcolor="#eb68b4"] ;
+6 -> 8 ;
+9 [label="gini = 0.0\nsamples = 122\nvalue = [0, 0, 0, 0, 122, 0]\nclass =  ", fillcolor="#8139e5"] ;
+8 -> 9 ;
+10 [label="gini = 0.0\nsamples = 516\nvalue = [0, 0, 0, 0, 0, 516]\nclass = 3", fillcolor="#e5399d"] ;
+8 -> 10 ;
+}
